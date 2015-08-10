@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>魔方手机网</title>
+<script type="text/javascript">
+    var iWidth = document.documentElement.getBoundingClientRect().width;
+        iWidth = iWidth > 640?640:iWidth;
+        iWidth = iWidth < 320?320:iWidth;
+        document.getElementsByTagName("html")[0].style.fontSize = iWidth/16 + "px";
+</script>
+<script type="text/javascript" src="dep/esl/1.2.0/asset/esl.js"></script>
+<script type="text/javascript">
+    require.config({
+        'baseUrl': './asset',
+        'paths': {}
+    });
+    require(['main']);
+</script>
+<link rel="stylesheet" type="text/css" href="asset/css/main.css">
+</head>
+<body>
+<!-- 页头区域 -->
+    <header class="top">
+        <h1><img src="asset/img/logo.png" class="logo"></h1>
+    </header>
+<!-- 搜索框 -->
+    <section class="search">
+        <form class="search-form">
+            <input type="text" class="search-input" placeholder="请输入关键词">
+            <input type="button" class="search-btn">
+        </form>
+    </section>
+<!-- 导航信息 -->
+    <nav class="nav">
+        <a href="#" class="border-r">咨询</a>
+        <a href="#" class="border-r">视频</a>
+        <a href="#" class="border-r">产业</a>
+        <a href="#">攻略</a>
+        <a href="#" class="border-r">八卦</a>
+        <a href="#" class="border-r">游戏</a>
+        <a href="#" class="border-r">发号</a>
+        <a href="#">腾讯</a>
+    </nav>
+<!-- 轮播图 -->
+    <section class="banner" id="banner">
+        <ul class="banner-tab">
+        <!-- 由js动态生成 -->
+            <!-- <li class="banner-tab-item">
+                <a href="#">
+                    <img src="asset/img/banner/banner1.jpg" class="banner-pic">
+                    <p class="banner-info">《梦幻西游》神器狂欢 装备洗练定制神兵</p>
+                </a>
+            </li>
+            <li class="banner-tab-item">
+                <a href="#">
+                    <img src="asset/img/banner/banner1.jpg" class="banner-pic">
+                    <p class="banner-info">《梦幻西游》神器狂欢 装备洗练定制神兵</p>
+                </a>
+            </li>
+            <li class="banner-tab-item">
+                <a href="#">
+                    <img src="asset/img/banner/banner1.jpg" class="banner-pic">
+                    <p class="banner-info">《梦幻西游》神器狂欢 装备洗练定制神兵</p>
+                </a>
+            </li>
+            <li class="banner-tab-item">
+                <a href="#">
+                    <img src="asset/img/banner/banner1.jpg" class="banner-pic">
+                    <p class="banner-info">《梦幻西游》神器狂欢 装备洗练定制神兵</p>
+                </a>
+            </li>
+            <li class="banner-tab-item">
+                <a href="#">
+                    <img src="asset/img/banner/banner1.jpg" class="banner-pic">
+                    <p class="banner-info">《梦幻西游》神器狂欢 装备洗练定制神兵</p>
+                </a>
+            </li> -->
+        </ul> 
+        <ol class="banner-dot">
+           <!-- <li class="banner-dot-item active"></li>
+           <li class="banner-dot-item"></li>
+           <li class="banner-dot-item"></li>
+           <li class="banner-dot-item"></li>
+           <li class="banner-dot-item"></li> -->
+       </ol>   
+    </section>
+<!-- 今日头条 信息列表 -->
+    <section class="info mt12">
+        <header class="info-header">
+            <h1 class="title">今日头条</h1>
+            <p class="sub-title">
+                <a href="#" class="item">咨询</a>
+                <a href="#" class="item">评测</a>
+                <a href="#" class="item">八卦</a>
+            </p>
+        </header>
+
+        <ul class="info-list">
+            <li class="info-item">
+                <a href="#"><img src="http://pic0.mofang.com/2015/0730/20150730020542669.jpg" class="info-pic"></a>
+                <div class="info-text">
+                    <h3 class="title"><a href="#">《零：弹丸夜曲》试玩开放 完整版8月4号到来</a></h3>
+                    <p class="content">这次新作的音乐将是前作的“混音版”</p>
+                </div>
+            </li>
+            <li class="info-item mt12">
+                <a href="#"><img src="http://pic0.mofang.com/2015/0730/20150730020542669.jpg" class="info-pic"></a>
+                <div class="info-text">
+                    <h3 class="title"><a href="#">《零：弹丸夜曲》试玩开放 完整版8月4号到来</a></h3>
+                    <p class="content">这次新作的音乐将是前作的“混音版”</p>
+                </div>
+            </li>
+            <li class="info-item mt12">
+                <a href="#"><img src="http://pic0.mofang.com/2015/0730/20150730020542669.jpg" class="info-pic"></a>
+                <div class="info-text">
+                    <h3 class="title"><a href="#">《零：弹丸夜曲》试玩开放 完整版8月4号到来</a></h3>
+                    <p class="content">这次新作的音乐将是前作的“混音版”</p>
+                </div>
+            </li>
+            <li class="info-item mt12">
+                <a href="#"><img src="http://pic0.mofang.com/2015/0730/20150730020542669.jpg" class="info-pic"></a>
+                <div class="info-text">
+                    <h3 class="title"><a href="#">《零：弹丸夜曲》试玩开放 完整版8月4号到来</a></h3>
+                    <p class="content">这次新作的音乐将是前作的“混音版”</p>
+                </div>
+            </li>
+            <li class="info-item mt12">
+                <a href="#"><img src="http://pic0.mofang.com/2015/0730/20150730020542669.jpg" class="info-pic"></a>
+                <div class="info-text">
+                    <h3 class="title"><a href="#">《零：弹丸夜曲》试玩开放 完整版8月4号到来</a></h3>
+                    <p class="content">这次新作的音乐将是前作的“混音版”</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+<!-- 逗你玩模块 -->
+    <section class="dnwan mt12">
+        <h3 class="title">《模仿逗你玩》242：你瞅啥？瞅你咋滴</h3>
+        <div class="dnwan-pic">
+            <a href=""><img class="item" src="http://pic1.mofang.com/2015/0706/20150706042827602.gif"></a>
+            <a href=""><img class="item" src="http://pic1.mofang.com/2015/0706/20150706042827602.gif"></a>
+            <a href=""><img class="item" src="http://pic1.mofang.com/2015/0706/20150706042827602.gif"></a>
+        </div>
+        <p class="dnwan-info">大过节的，各种秀恩爱，妹子们都在求婚，谁给我块巧克力吃？</p>
+        <button class="more-btn more-info">更多内容</button>
+    </section>
+<!-- 特色推荐 -->
+    <section class="wrap box3 mt12">
+        <h1 class="title">特色推荐</h1>
+        <ul class="box3-list">
+            <li class="box3-item fl mb18">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fr mb18">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fl mb18">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fr mb18">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fl mb18">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fr mb18">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fl">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+            <li class="box3-item fr">
+                <span class="item-title">吐槽囧集</span>
+                <p class="item-info">人看囧途身不由己</p>
+            </li>
+        </ul>
+    </section>
+<!-- 模块4 手游开测表 -->
+    <section class="wrap box4 mt12">
+        <h1 class="title">手游开测表</h1>
+        <section class="box4-table">
+            <ul>
+                <li>游戏名称</li>
+                <li>开测时间</li>
+                <li>状态</li>
+                <li>礼包</li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+            <ul>
+                <li>呵呵江湖</li>
+                <li>09-29 09:00</li>
+                <li>封测</li>
+                <li><a href="#" class="gif-btn">领取</a></li>
+            </ul>
+        </section>
+    </section>
+
+<!-- 模块5 信息列表 -->
+    <section class="box5 mt12">
+
+        <header class="title">
+            <a href="#" class="tab-head active">攻略</a>
+            <a href="#" class="tab-head">评测</a>
+            <a href="#" class="tab-head">产业</a>
+        </header>
+        
+
+        <section class="tab-con">
+            <ul class="list">
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+            </ul>
+            <hr style="border: 0; background-color: #ccc; height: 1px;">
+            <ul class="list">
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+                <li class="item">
+                    <i></i>
+                    <a href="#">梦幻西游手游50级混世魔王侠士副本攻略</a>
+                    <span>07-31</span>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+<!-- 模块6 手游工具 -->
+    <section class="wrap box6 mt12">
+        <h1 class="title">手游工具</h1>
+        <section class="box6-con">
+            <ul class="list">
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic2.mofang.com/2015/0525/20150525051432150.jpg/80" alt=""><span>魔方游戏宝</span></a></li>
+            </ul>
+        </section>
+    </section>
+<!-- 模块7 热门游戏专区 -->
+    <section class="wrap box7 mt12">
+        <h1 class="title">热门游戏专区</h1>
+         <section class="box7-con">
+            <ul class="list">
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+                <li><a href="#"><img src="http://pic1.mofang.com/2014/0818/20140818022536170.jpg/57" alt=""><span>魔方游戏宝</span></a></li>
+            </ul>
+        </section>
+    </section>
+<!-- 美女囧途 -->
+    <section class="wrap box8 mt12">
+        <h1 class="title">美女囧途</h1>
+        <section class="box8-con">
+            <ul class="list">
+                <li class="item">
+                    <a href="#"><img src="http://pic1.mofang.com/2015/0729/20150729050723998.jpg/100" alt=""><span>短发女人也可以性感可爱</span></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="http://pic1.mofang.com/2015/0729/20150729050723998.jpg/100" alt=""><span>短发女人也可以性感可爱</span></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="http://pic1.mofang.com/2015/0729/20150729050723998.jpg/100" alt=""><span>短发女人也可以性感可爱</span></a>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="http://pic1.mofang.com/2015/0729/20150729050723998.jpg/100" alt=""><span>短发女人也可以性感可爱</span></a>
+                </li>
+            </ul>
+            <button class="more-btn more-pic">更多图片</button>
+        </section>
+
+    </section>
+<!-- 关于我们 -->
+    <section class="wrap box9 mt12">
+        <h1 class="title">关于我们</h1>
+        <section class="box9-con clearFix">
+            <div class="box9-pic"><img src="http://sts0.mofang.com/statics/v4/wap/img/mf_game_6237ea6.png"></div>
+            <dl class="box9-info">
+                <dt class="info-title">魔方陪您玩官方微信</dt>
+                <dd class="info-title">微信号:mofanggames</dd>
+                <dd class="info-sub-title">最新，最好玩的手机游戏!<br/>魔方陪你一起玩</dd>
+            </dl>
+        </section>
+    </section>
+
+<!-- 底部版权信息 -->
+    <footer class="copy-right mt12">
+        <p class="info">(C)2015 魔方网 MOFANG.COM</p>
+        <p class="info">皖ICP备13001602号-1</p>
+        <a href="#"><img src="http://sts0.mofang.com/statics/v4/common/img/wap/logo_dc5b0a1.png"></a>  
+    </footer>
+</body>
+</html>
